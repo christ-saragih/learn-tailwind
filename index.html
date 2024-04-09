@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -39,12 +40,8 @@
                 },
             },
         };
-    </script>
-    <style type="text/tailwindcss">
-        #toggle:checked ~ label div.toggle-circle {
-            @apply translate-x-4;
-        }
-    </style>
+    </script> -->
+
 </head>
 <body class="dark:bg-slate-800 dark:text-slate-200">
     <h1 class="text-6xl font-bold text-center my-10">Mari Belajar <span class="bg-gradient-to-br from-blue-500 to-red-400 bg-clip-text text-transparent">Tailwind CSS</span></h1>
@@ -220,37 +217,39 @@
         <div class="md:col-start-4 md:row-start-2 flex"><h2 class="h-15 text-xl font-semibold text-slate-700 self-center">Welcome to WPU!</h2></div>
         <div class="md:col-start-2 md:row-start-2 flex"><p class="h-15 text-lg font-bold text-slate-600 self-end">@bennefitchristy</p></div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/img/technology/img1.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('/img/technology/img2.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/img/technology/img3.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img4.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/img/technology/img4.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img5.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/img/technology/img5.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img6.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card md:col-start-2">
+            <div class="grid-card-img bg-[url('/img/technology/img6.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img7.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card md:col-start-4">
+            <div class="grid-card-img bg-[url('/img/technology/img7.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img8.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/img/technology/img8.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img9.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('/img/technology/img9.jpg')]"></div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-[98%] transition-all duration-300">
-            <div class="w-full h-full bg-[url('/img/technology/img10.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-3 transition-all duration-300"></div>
+        <div class="group grid-card md:col-start-3">
+            <div class="grid-card-img bg-[url('/img/technology/img10.jpg')]"></div>
         </div>
     </div>
+
+    <h1>Haloo Gaes!</h1>
 
     <div class="mb-96"></div>
 
